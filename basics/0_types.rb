@@ -9,16 +9,19 @@ require 'pry'
 int = Integer(0) # => 0
 int = 7 # => 7
 int.class # => Integer
+int.is_a?(Integer) # => true
 
 # INFO: String
 str = String('') # => ''
 str = ''  # => ''
 str.class # => String
+str.is_a?(String) # => true
 
 # INFO: Symbol
 sym = :some_symbol # => :some_symbol
 sym = :'some_symbol' # => :some_symbol
 sym.class # => Symbol
+sym.is_a?(Symbol) # => true
 
 # INFO:  Array
 arr = Array.new # => []
@@ -26,16 +29,19 @@ arr = []  # => []
 arr = %w[a b c d] #=> ['a', 'b', 'c', 'd']
 arr = %i[a b c d] #=> [:a :b :c :d]
 arr.class # => Array
+arr.is_a?(Array) # => true
 
 # INFO: Hash
 h = Hash.new
 h = {}
 h.class # => Hash
+h.is_a?(Hash) # => true
 
 # INFO: Range
-range = Range.new(3,4) # => 3..4
+range = Range.new(3, 4) # => 3..4
 range = 3..4
 range.class # => Range
+range.is_a?(Range) # => true
 
 # INFO: Struct
 # Return structure
@@ -51,7 +57,10 @@ person.first_name # => 'John'
 person.last_name # => 'Doe'
 person.full_name # => 'John Doe'
 
-# INFO: OpenStruct < Struct
+Person.new.is_a?(Struct) # => true
+Person.new.is_a?(Person) # => true
+
+# INFO: OpenStruct
 # Return Object
 # Implement setters
 open_struct = OpenStruct.new({
@@ -67,5 +76,8 @@ open_struct.first_name # => 'Garry'
 
 open_struct.last_name = 'Moor'
 open_struct.last_name # => 'Moor'
+
+open_struct.is_a?(Struct) # => false
+open_struct.is_a?(OpenStruct) # => true
 
 
