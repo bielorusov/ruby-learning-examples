@@ -3,7 +3,19 @@
 require 'rubygems'
 require 'pry'
 
-# INFO: Integer, String, Symbol, Array, Hash, Range, Struct, OpenStruct
+# INFO: TrueClass, FalseClass, NilClass, Integer, String, Symbol, Array, Hash, Range, Struct, OpenStruct
+
+# INFO: TrueClass
+true.class # => TrueClass
+true.is_a?(TrueClass) # => true
+
+# INFO: FalseClass
+false.class # => FalseClass
+false.is_a?(FalseClass) # => true
+
+# INFO: NilClass
+nil.class  # => NilClass
+nil.is_a?(NilClass) # => true
 
 # INFO: Integer
 int = Integer(0) # => 0
