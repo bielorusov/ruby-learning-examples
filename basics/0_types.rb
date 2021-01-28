@@ -72,6 +72,7 @@ person.full_name # => 'John Doe'
 Person.new.is_a?(Struct) # => true
 Person.new.is_a?(Person) # => true
 
+
 # INFO: OpenStruct
 # Return Object
 # Implement setters
