@@ -116,12 +116,5 @@ class Woman < Human
     @sex = 0
   end
 end
-<<<<<<< HEAD
-
 
 # RTFM: Man.all.select { |man| man.adult? }  #=>  Man.all.select(&:adult?)
-
-
-
-=======
->>>>>>> good name for commit
