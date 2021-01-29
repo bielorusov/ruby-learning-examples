@@ -11,3 +11,8 @@
 _Use `binding.pry` everywhere for debugging_
 
 
+#### RTFM:
+- [Ruby Types](https://ru.wikibooks.org/wiki/Ruby/Базовые_типы_данных)
+- [Practice](https://ru.wikibooks.org/wiki/Ruby/Практикум)
+- [Tasks](https://ru.wikibooks.org/wiki/Ruby/Задачник)
+
