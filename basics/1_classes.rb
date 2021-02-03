@@ -5,7 +5,7 @@ require 'pry'
 
 module Orm
   module Storage
-    class Base
+    class Base # INFO: Interface class
       def self.add_record(object)
         raise NotImplementedError, 'should implemented'
       end

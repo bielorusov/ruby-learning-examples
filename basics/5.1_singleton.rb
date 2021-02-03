@@ -6,12 +6,11 @@ require 'singleton'
 
 class ManualSingletonFoo
   def self.new
-      @instance ||= super
+    @instance ||= super
   end
 end
 
 puts ManualSingletonFoo.new == ManualSingletonFoo.new # => True
-
 
 class SingletonFoo
   include Singleton
