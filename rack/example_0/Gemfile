@@ -6,4 +6,4 @@ ruby '2.7.1'
 
 gem 'pry'
 gem 'rack'
-gem 'json'
+gem 'json'  # {}.to_json
